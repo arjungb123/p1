@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block mycontent %}
+
+{% for a in myemp %}
+
+<ul class="list-group-item">
+        <li class="list-group-item active"> <b> id: </b>{{a.id}}</li>
+        <li class="list-group-item "> <b> name: </b>{{a.name}}</li>
+        <li class="list-group-item "> <b> salary: </b>{{a.salary}}</li>
+</ul>
+
+{% endfor %}
+{% endblock %}
+
+
+        
+
+
